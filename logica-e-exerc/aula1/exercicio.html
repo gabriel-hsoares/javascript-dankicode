@@ -11,14 +11,18 @@
         // prompt
 
         var array = [];
-        var pos = 0;
-
-        array.push(prompt("digite o primeiro valor do array"));
+        i = 0;
+        var tam = prompt("Digite o tamanho do array");
         
+        for(i; i < tam; i++) {
+            var valor = prompt("Digite um valor");
+            array.push(valor);
+        }
+        console.log("Este é o seu array normal -> [" + array + "]");
+        array.sort();
 
+        console.log("Este é o seu array ordenado -> [" + array + "]");
         
-
-        alert(array);
     </script>
 </body>
 </html>

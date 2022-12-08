@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // calculadora dinâmica
+
+        var primNum = prompt('Digite o primeiro número: ');
+        var segNum = prompt('Digite o segundo número: ');
+        var operacao = prompt('Digite o sinal da operação: ');
+
+        while(operacao != '+' && operacao != '-' && operacao != '/' && operacao != '*'){
+            alert('Informe um sinal válido (+, -, /, *)');
+            operacao = prompt('Digite um operador válido: ')
+        }
+
+        var resFinal = 0;
+
+        primNum = parseInt(primNum);
+        segNum = parseInt(segNum);
+
+        if(operacao == '+'){
+            resFinal = primNum + segNum;
+        }
+        else if(operacao == '-'){
+            resFinal = primNum - segNum;
+        }
+        else if(operacao == '/'){
+            resFinal = primNum / segNum;
+        }
+        else if(operacao == '*'){
+            resFinal = primNum * segNum;
+        }
+
+
+        alert('O resultado final é igual a ' + resFinal + '.');
+    </script>
+</body>
+</html>
